@@ -23,7 +23,6 @@ ENV PYTHONPATH=/pkgs
 # copy files
 WORKDIR /memes
 COPY . /memes
-COPY docker/build/db_config.yaml docker/build/.env /memes/
 COPY --from=builder /tmp/__pypackages__/3.12/lib /pkgs
 COPY --from=builder /tmp/__pypackages__/3.12/bin/* /bin/
 
