@@ -33,7 +33,7 @@ RUN apt-get update \
     && localedef -i zh_CN -c -f UTF-8 -A /usr/share/locale/locale.alias zh_CN.UTF-8 \
     && fc-cache -fv \
     && apt-get purge -y --auto-remove \
-    && rm -rf /var/lib/apt/lists/* \
+    && rm -rf /var/lib/apt/lists/*
 RUN meme download
 RUN chmod +x /memes/entrypoint.sh
 
