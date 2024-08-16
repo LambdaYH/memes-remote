@@ -35,6 +35,7 @@ RUN apt-get update \
     && apt-get purge -y --auto-remove \
     && rm -rf /var/lib/apt/lists/* \
 RUN meme download
+RUN chmod +x /memes/entrypoint.sh
 
 EXPOSE 8080
 
