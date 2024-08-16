@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+memes_remote.egg-info/PKG-INFO
+memes_remote.egg-info/SOURCES.txt
+memes_remote.egg-info/dependency_links.txt
+memes_remote.egg-info/requires.txt
+memes_remote.egg-info/top_level.txt

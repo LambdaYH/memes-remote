@@ -1,0 +1,22 @@
+[project]
+name = "memes-remote"
+version = "0.1.0"
+description = "memes-remote"
+readme = "README.md"
+requires-python = ">=3.10, <4.0"
+dependencies = [
+    "nonebot-adapter-onebot>=2.4.3",
+    "nonebot2[fastapi]>=2.2.1",
+    "nonebot-plugin-memes>=0.6.2",
+    "nb-cli>=1.4.1",
+]
+
+[tool.nonebot]
+adapters = [
+    { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" }
+]
+plugins = ["nonebot_plugin_memes"]
+plugin_dirs = ["memes_remote"]
+builtin_plugins = []
+
+[tool.pdm]
