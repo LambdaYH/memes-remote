@@ -11,6 +11,6 @@ async def _(
     data: Dict[str, Any],
 ): 
     # 遍历上下文中的所有变量
-    event: Event = current_event.get()
+    event: Event = current_event.get(None)
     if isinstance(event, MessageEvent):
         data["__self_id__"] = event.self_id
