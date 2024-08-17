@@ -22,7 +22,8 @@ FROM python:3.10-slim-bookworm
 ENV PYTHONPATH=/pkgs
 # copy files
 WORKDIR /memes
-COPY memes_remote .env entrypoint.sh pyproject.toml /memes/
+COPY ./memes_remote/ /memes/memes_remote/
+COPY .env entrypoint.sh pyproject.toml /memes/
 COPY --from=builder /tmp/__pypackages__/3.10/lib /pkgs
 COPY --from=builder /tmp/__pypackages__/3.10/bin/* /bin/
 COPY ./fonts/* /usr/share/fonts/
