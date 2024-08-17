@@ -41,4 +41,4 @@ EXPOSE 8080
 
 ENTRYPOINT ["/memes/entrypoint.sh"]
 
-CMD nb run
+CMD nb orm upgrade ; nb run
