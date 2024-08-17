@@ -20,3 +20,6 @@ plugin_dirs = ["memes_remote"]
 builtin_plugins = []
 
 [tool.pdm]
+
+[tool.setuptools]
+py-modules = ["memes_remote"]
