@@ -35,11 +35,7 @@ RUN apt-get update \
     && fc-cache -fv \
     && apt-get purge -y --auto-remove \
     && rm -rf /var/lib/apt/lists/*
-RUN meme download
-RUN chmod +x /memes/entrypoint.sh
 
 EXPOSE 8080
-
-ENTRYPOINT ["/memes/entrypoint.sh"]
 
 CMD nb orm upgrade ; nb run
